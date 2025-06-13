@@ -24,11 +24,11 @@ pipeline {
                     sh '/Users/akshayjadhav/Downloads/apache-maven-3.9.10/bin/mvn test'
                 }
             }
+        }
         stage('Completed'){
             steps {
                 echo 'Project Completed'
             }
-        }
         }
     }
 }
