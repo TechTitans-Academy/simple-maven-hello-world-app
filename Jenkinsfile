@@ -14,14 +14,14 @@ pipeline {
         stage('Build') {
             steps {
                 dir('simple-java-maven-app') {
-                    sh 'mvn clean install'
+                    sh '/Users/akshayjadhav/Downloads/apache-maven-3.9.10/bin/mvn clean install'
                 }
             }
         }
         stage('Test') {
             steps {
                 dir('simple-java-maven-app') {
-                    sh 'mvn test'
+                    sh '/Users/akshayjadhav/Downloads/apache-maven-3.9.10/bin/mvn test'
                 }
             }
         }
